@@ -1,9 +1,0 @@
-from flask import Flask
-
-application_object = Flask(__name__)
-
-@application_object.route("/", methods=["GET","POST"])
-def hello():
-    return "Hello, World!"
-
-application_object.run()
